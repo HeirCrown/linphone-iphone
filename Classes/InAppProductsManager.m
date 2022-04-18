@@ -304,7 +304,7 @@
 	if (defaultAccount &&
 		strcmp([LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 													inSection:@"app"
-												  withDefault:@"sip.linphone.org"]
+												  withDefault:@"sip.phone.com"]
 				   .UTF8String,
 			   linphone_account_params_get_domain(linphone_account_get_params(defaultAccount))) == 0) {
 		const LinphoneAuthInfo *info = linphone_account_find_auth_info(defaultAccount);

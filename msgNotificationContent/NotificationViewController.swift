@@ -26,7 +26,7 @@ import os
 import Firebase
 #endif
 
-var APP_GROUP_ID = "group.org.linphone.phone.msgNotification"
+var APP_GROUP_ID = "group.com.heircrown.softphone.msgNotification"
 var isReplySent: Bool = false
 var needToStop: Bool = false
 var coreStopped: Bool = false

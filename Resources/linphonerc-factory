@@ -6,13 +6,13 @@ link_account_popup_time=86400
 hide_assistant_custom_account=0
 
 #Hide in the assistant the button to create a new SIP account
-hide_assistant_create_account=0
+hide_assistant_create_account=1
 
 #Hide in the assistant the logo
 show_assistant_logo_in_choice_view_preference=0
 
 #Hide in the assistant the button to fetch a remote configuration
-show_remote_provisioning_in_assistant=0
+show_remote_provisioning_in_assistant=1
 
 #contact_display_username_only=1
 #contact_filter_on_default_domain=1

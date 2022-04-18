@@ -22,13 +22,13 @@
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.linphone.phone.linphoneExtension</string>
-		<string>group.belledonne-communications.linphone.widget</string>
-		<string>group.org.linphone.phone.msgNotification</string>
+		<string>group.com.heircrown.softphone.linphoneExtension</string>
+		<string>group.com.heircrown.softphone.linphone.widget</string>
+		<string>group.group.com.heircrown.softphone.msgNotification</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)org.linphone.phone</string>
+		<string>$(AppIdentifierPrefix)com.heircrown.softphone</string>
 	</array>
 </dict>
 </plist>

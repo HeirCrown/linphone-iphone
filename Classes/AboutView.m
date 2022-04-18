@@ -85,7 +85,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 }
 
 - (IBAction)onPolicyTap {
-	NSString *url = @"https://www.linphone.org/privacy-policy";
+	NSString *url = @"https://heircrown.com/hcphone-privacy/";
 	if (![UIApplication.sharedApplication openURL:[NSURL URLWithString:url]]) {
 		LOGE(@"Failed to open %@, invalid URL", url);
 	}

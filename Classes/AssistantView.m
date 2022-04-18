@@ -136,13 +136,13 @@ static UICompositeViewDescription *compositeDescription = nil;
     _qrCodeButton.hidden = !ENABLE_QRCODE;
 	[self resetLiblinphone:FALSE];
 	[self enableWelcomeViewButtons];
-	NSString *message = NSLocalizedString(@"I accept Belledonne Communications’ terms of use and privacy policy", nil);
+	NSString *message = NSLocalizedString(@"I accept Heir Crown Inc' terms of use and privacy policy", nil);
 	NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSForegroundColorAttributeName : [UIColor systemGrayColor]}];
 	[attributedString addAttribute:NSLinkAttributeName
-						 value:@"https://www.linphone.org/general-terms"
+						 value:@"https://heircrown.com/hc-phone-terms"
 						 range:[[attributedString string] rangeOfString:NSLocalizedString(@"terms of use", nil)]];
 	[attributedString addAttribute:NSLinkAttributeName
-						 value:@"https://www.linphone.org/privacy-policy"
+						 value:@"https://heircrown.com/hc-phone-privacy"
 						 range:[[attributedString string] rangeOfString:NSLocalizedString(@"privacy policy", nil)]];
 
 	NSDictionary *linkAttributes = @{NSForegroundColorAttributeName : [UIColor redColor],
@@ -311,6 +311,9 @@ static UICompositeViewDescription *compositeDescription = nil;
 	UIImage *image = acceptTerms ? [UIImage imageNamed:@"checkbox_checked.png"] : [UIImage imageNamed:@"checkbox_unchecked.png"];
 	[_acceptButton setImage:image forState:UIControlStateNormal];
 	_gotoRemoteProvisioningButton.enabled = _gotoLinphoneLoginButton.enabled = _gotoCreateAccountButton.enabled = _gotoLinphoneSpecificFeatureWarningButton.enabled = acceptTerms;
+    // TAM Disable LinPhone Login
+    _gotoLinphoneLoginButton.hidden = TRUE;
+    
 }
 
 + (NSString *)errorForLinphoneAccountCreatorPhoneNumberStatus:(LinphoneAccountCreatorPhoneNumberStatus)status {
@@ -734,7 +737,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 #if DEBUG
 		UIAssistantTextField *atf =
 			(UIAssistantTextField *)[self findView:ViewElement_Domain inView:view ofType:UIAssistantTextField.class];
-		atf.text = @"test.linphone.org";
+		atf.text = @"sip.phone.com";
 #endif
 	}
 	phone_number_length = 0;
@@ -1407,9 +1410,16 @@ UIColor *previousColor = (UIColor*)[sender backgroundColor]; \
 
 - (IBAction)onGoToNonLinphoneInfoPage:(id)sender {
 	ONCLICKBUTTON(sender, 100, {		
-		nextView = _linphoneSpecificFeatureWarningView;
-		[self changeView:nextView back:FALSE animation:TRUE];
+        // TAM skip Assistant Warning, display SIP setup
+		//nextView = _linphoneSpecificFeatureWarningView;
+		//[self changeView:nextView back:FALSE animation:TRUE];
+        
+        nextView = _loginView;
+        [self loadAssistantConfig:@"assistant_external_sip.rc"];
+        
 	});
+    
+    
 }
 
 - (IBAction)onGotoRemoteProvisioningClick:(id)sender {
@@ -1646,7 +1656,7 @@ UIColor *previousColor = (UIColor*)[sender backgroundColor]; \
 	}
 
 	if (uri) {
-		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@sip.linphone.org", nil), uri];
+		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@sip.phone.com", nil), uri];
 	} else if (!username.superview.hidden) {
 		_accountLabel.text = NSLocalizedString(@"Please enter your username", nil);
 	} else {

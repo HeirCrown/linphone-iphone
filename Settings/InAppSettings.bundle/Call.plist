@@ -80,7 +80,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string></string>
+			<string>*8686@sip.heircrown.com</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Type</key>

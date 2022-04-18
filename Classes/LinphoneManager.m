@@ -80,7 +80,7 @@ NSString *const kLinphoneVoiceMessagePlayerLostFocus = @"LinphoneVoiceMessagePla
 NSString *const kLinphoneConfStateChanged = @"kLinphoneConfStateChanged";
 NSString *const kLinphoneConfStateParticipantListChanged = @"kLinphoneConfStateParticipantListChanged";
 
-NSString *const kLinphoneMsgNotificationAppGroupId = @"group.org.linphone.phone.msgNotification";
+NSString *const kLinphoneMsgNotificationAppGroupId = @"group.com.heircrown.softphone.msgNotification";
 
 const int kLinphoneAudioVbrCodecDefaultBitrate = 36; /*you can override this from linphonerc or linphonerc-factory*/
 
@@ -325,7 +325,7 @@ struct codec_name_pref_table codec_pref_table[] = {{"speex", 8000, "speex_8k_pre
 		[self lpConfigSetString:@"https://subscribe.linphone.org:444/wizard.php"
 		 forKey:@"xmlrpc_url"
 		 inSection:@"assistant"];
-		[self lpConfigSetString:@"sip:rls@sip.linphone.org" forKey:@"rls_uri" inSection:@"sip"];
+		[self lpConfigSetString:@"sip:rls@sip.phone.com" forKey:@"rls_uri" inSection:@"sip"];
 		[self lpConfigSetBool:YES forKey:@"migration_xmlrpc"];
 	}
 	[self lpConfigSetBool:NO forKey:@"store_friends" inSection:@"misc"]; //so far, storing friends in files is not needed. may change in the future.
@@ -390,7 +390,7 @@ static int check_should_migrate_images(void *data, int argc, char **argv, char *
 			if (addr &&
 			    strstr(addr, [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 					  inSection:@"app"
-					  withDefault:@"sip.linphone.org"]
+					  withDefault:@"sip.phone.com"]
 				   .UTF8String) != 0) {
 				LOGI(@"Migrating proxy config to use AVPF");
 				linphone_account_params_set_avpf_mode(newAccountParams, LinphoneAVPFEnabled);
@@ -413,12 +413,12 @@ static int check_should_migrate_images(void *data, int argc, char **argv, char *
 			if (addr &&
 			    strstr(addr, [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 					  inSection:@"app"
-					  withDefault:@"sip.linphone.org"]
+					  withDefault:@"sip.phone.com"]
 				   .UTF8String) != 0) {
 				LOGI(@"Migrating proxy config to send quality report");
 				
 				linphone_account_params_set_quality_reporting_collector(
-										      newAccountParams, "sip:voip-metrics@sip.linphone.org;transport=tls");
+										      newAccountParams, "sip:voip-metrics@sip.phone.com;transport=tls");
 				linphone_account_params_set_quality_reporting_interval(newAccountParams, 180);
 				linphone_account_params_set_quality_reporting_enabled(newAccountParams, TRUE);
 				linphone_account_set_params(account, newAccountParams);
@@ -440,7 +440,7 @@ static int check_should_migrate_images(void *data, int argc, char **argv, char *
 		const MSList *accounts = linphone_core_get_account_list(theLinphoneCore);
 		while (accounts)
 		{
-			if (!strcmp(linphone_account_params_get_domain(linphone_account_get_params((LinphoneAccount *)accounts->data)),"sip.linphone.org")) {
+			if (!strcmp(linphone_account_params_get_domain(linphone_account_get_params((LinphoneAccount *)accounts->data)),"sip.phone.com")) {
 				linphone_core_set_lime_x3dh_server_url(LC, "https://lime.linphone.org/lime-server/lime-server.php");
 				break;
 			}
@@ -476,14 +476,14 @@ static int check_should_migrate_images(void *data, int argc, char **argv, char *
 	const MSList *accounts = linphone_core_get_account_list(theLinphoneCore);
 	NSString *appDomain  = [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 				inSection:@"app"
-				withDefault:@"sip.linphone.org"];
+				withDefault:@"sip.phone.com"];
 	   while (accounts) {
 		   LinphoneAccount *account = accounts->data;
 		   LinphoneAccountParams *newAccountParams = linphone_account_params_clone(linphone_account_get_params(account));
 		   // can not create group chat without conference factory
 		   if (!linphone_account_params_get_conference_factory_uri(newAccountParams)) {
 			   if (strcmp(appDomain.UTF8String, linphone_account_params_get_domain(newAccountParams)) == 0) {
-				   linphone_account_params_set_conference_factory_uri(newAccountParams, "sip:conference-factory@sip.linphone.org");
+				   linphone_account_params_set_conference_factory_uri(newAccountParams, "sip:conference-factory@sip.phone.com");
 				   linphone_account_set_params(account, newAccountParams);
 			   }
 		   }
@@ -1249,7 +1249,7 @@ void popup_link_account_cb(LinphoneAccountCreator *creator, LinphoneAccountCreat
 		    strcmp(linphone_account_params_get_domain(accountParams),
 			   [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 			    inSection:@"app"
-			    withDefault:@"sip.linphone.org"]
+			    withDefault:@"sip.phone.com"]
 			   .UTF8String) == 0) {
 			UIAlertController *errView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Link your account", nil)
 						      message:[NSString stringWithFormat:NSLocalizedString(@"Link your Linphone.org account %s to your phone number.", nil),
@@ -1331,7 +1331,7 @@ void popup_link_account_cb(LinphoneAccountCreator *creator, LinphoneAccountCreat
 		LinphoneAccountParams const * currentParams = linphone_account_get_params(account);
 		LinphoneAddress const * currentAddress = linphone_account_params_get_identity_address(currentParams);
 		
-		if (strcmp(linphone_address_get_domain(currentAddress), "sip.linphone.org") == 0 && !linphone_account_params_cpim_in_basic_chat_room_enabled(currentParams) ) {
+		if (strcmp(linphone_address_get_domain(currentAddress), "sip.phone.com") == 0 && !linphone_account_params_cpim_in_basic_chat_room_enabled(currentParams) ) {
 			
 			LOGI(@"Enabling CPIM in basic chatroom for user %s", linphone_address_get_username(currentAddress));
 			LinphoneAccountParams * newParams = linphone_account_params_clone(linphone_account_get_params(account));
@@ -1859,9 +1859,9 @@ static int comp_call_state_paused(const LinphoneCall *call, const void *param) {
 
 	// Then check that the supplied address is valid
 	if (!iaddr) {
-		UIAlertController *errView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Invalid SIP address", nil)
-					      message:NSLocalizedString(@"Either configure a SIP proxy server from settings prior to place a "
-									@"call or use a valid SIP address (I.E sip:john@example.net)", nil)
+		UIAlertController *errView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Invalid Account Settings", nil)
+					      message:NSLocalizedString(@"You will need to setup your Phone account. Check your username & password. "
+									@"", nil)
 					      preferredStyle:UIAlertControllerStyleAlert];
 
 		UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", nil)

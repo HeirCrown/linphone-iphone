@@ -506,9 +506,9 @@ static UICompositeViewDescription *compositeDescription = nil;
 	const LinphoneAddress *addr = linphone_chat_room_get_peer_address(_chatRoom);
 	if (addr == NULL) {
 		[PhoneMainView.instance popCurrentView];
-		UIAlertController *errView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Invalid SIP address", nil)
-																		 message:NSLocalizedString(@"Either configure a SIP proxy server from settings prior to send a "
-																								   @"message or use a valid SIP address (I.E sip:john@example.net)",
+		UIAlertController *errView = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Invalid Account Setting", nil)
+																		 message:NSLocalizedString(@"You will need to setup your Phone account. Check your username & password."
+																								   @"",
 																								   nil)
 																  preferredStyle:UIAlertControllerStyleAlert];
 		

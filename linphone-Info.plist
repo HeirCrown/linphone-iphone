@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Linphone</string>
+	<string>HC-Phone</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons~ipad</key>
@@ -33,7 +33,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>linphone_icon_72@2x</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com.heircrown.softphone</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sip</string>
@@ -45,7 +45,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>linphone_icon_72@2x</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com.heircrown.softphone</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>linphone-config</string>
@@ -57,7 +57,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>linphone_icon_72@2x</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com.heircrown.softphone</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>message-linphone</string>
@@ -69,7 +69,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>linphone_icon_72@2x</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com.heircrown.softphone</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>linphone-widget</string>
@@ -81,7 +81,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>linphone_icon_72@2x</string>
 			<key>CFBundleURLName</key>
-			<string>org.linphone.phone</string>
+			<string>com.heircrown.softphone</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sips</string>
@@ -114,7 +114,7 @@
 	<string>Share photos with your friends and customize avatars</string>
 	<key>NSUbiquitousContainers</key>
 	<dict>
-		<key>iCloud.org.linphone.phone</key>
+		<key>iCloud.com.heircrown.softphone</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<true/>
