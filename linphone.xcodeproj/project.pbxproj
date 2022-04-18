@@ -621,7 +621,7 @@
 		63E27A321C4FECD000D332AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E27A311C4FECD000D332AE /* LaunchScreen.xib */; };
 		63E27A521C50EDB000D332AE /* hold.mkv in Resources */ = {isa = PBXBuildFile; fileRef = 63E27A511C50EB2700D332AE /* hold.mkv */; };
 		63E59A3F1ADE70D900646FB3 /* InAppProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E59A3E1ADE70D900646FB3 /* InAppProductsManager.m */; };
-		63E802DB1C625AEF000D5509 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		63E802DB1C625AEF000D5509 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		63EC8D391D7438660066547B /* AssistantLinkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EC8D3B1D7438660066547B /* AssistantLinkView.xib */; };
 		63F1DF441BCE618E00EDED90 /* UIAddressTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1DF431BCE618E00EDED90 /* UIAddressTextField.m */; };
 		63F1DF4B1BCE983200EDED90 /* CallConferenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1DF4A1BCE983200EDED90 /* CallConferenceTableView.m */; };
@@ -2320,7 +2320,7 @@
 			path = LinphoneUI;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				8C23BCB71D82AAC3005F19BB /* linphone.entitlements */,
@@ -3047,7 +3047,6 @@
 				92EB6C052CF3AAD4193EAD31 /* Pods-msgNotificationService.distribution.xcconfig */,
 				E19FC645A566E91D4EEB9C8F /* Pods-msgNotificationService.distributionadhoc.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -3317,7 +3316,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = GUKAY34HZ2;
 						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -3340,7 +3339,7 @@
 					};
 					61AE364A20C00B370089D9D3 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = GUKAY34HZ2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -3350,7 +3349,7 @@
 					};
 					EA5F25D8232BD3E200475F2E = {
 						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = GUKAY34HZ2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -3360,7 +3359,7 @@
 					};
 					EA8CB826239F96CA00C330CC = {
 						CreatedOnToolsVersion = 10.3;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = GUKAY34HZ2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -3394,7 +3393,7 @@
 				fr,
 				hu,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3457,7 +3456,7 @@
 				633FEED41D3CD55A0014B822 /* numpad_7_default@2x.png in Resources */,
 				633FEEE01D3CD55A0014B822 /* numpad_8_over~ipad@2x.png in Resources */,
 				633FEDDC1D3CD5590014B822 /* call_start_body_disabled~ipad.png in Resources */,
-				63E802DB1C625AEF000D5509 /* BuildFile in Resources */,
+				63E802DB1C625AEF000D5509 /* (null) in Resources */,
 				633FEE2E1D3CD5590014B822 /* color_F.png in Resources */,
 				633FEDC51D3CD5590014B822 /* call_hangup_disabled@2x.png in Resources */,
 				633FEEDF1D3CD55A0014B822 /* numpad_8_over~ipad.png in Resources */,
@@ -4992,7 +4991,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5022,7 +5021,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 4.6.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -5121,7 +5120,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5148,7 +5147,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 4.6.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -5246,7 +5245,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5273,7 +5272,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 4.6.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -5370,7 +5369,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5397,7 +5396,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 4.6.0;
+				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -5447,7 +5446,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5490,7 +5489,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5532,7 +5531,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5575,7 +5574,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5669,7 +5668,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5725,7 +5724,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5777,7 +5776,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5829,7 +5828,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5881,7 +5880,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5937,7 +5936,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -5989,7 +5988,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6041,7 +6040,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = GUKAY34HZ2;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

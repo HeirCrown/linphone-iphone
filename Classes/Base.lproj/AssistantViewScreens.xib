@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,7 @@
                                 <action selector="onAcceptTermsClick:" destination="-1" eventType="touchUpInside" id="grZ-W7-Lyz"/>
                             </connections>
                         </button>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I accept Heir Crown Inc's ’ terms of use and privacy policy" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-fD-JSt" userLabel="acceptText">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="I accept Heir Crown Inc's terms of use and privacy policy" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R4J-fD-JSt" userLabel="acceptText">
                             <rect key="frame" x="68" y="0.0" width="235" height="58"/>
                             <color key="textColor" systemColor="systemGrayColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -98,8 +98,8 @@
                         <constraint firstAttribute="height" constant="58" id="zjY-mm-MaQ"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="36" userLabel="createAccountButton" customClass="UIRoundBorderedButton">
-                    <rect key="frame" x="40" y="153" width="299" height="40"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="36" userLabel="createAccountButton" customClass="UIRoundBorderedButton">
+                    <rect key="frame" x="36" y="295" width="299" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <accessibility key="accessibilityConfiguration" label="Create account">
                         <bool key="isElement" value="YES"/>
@@ -141,28 +141,6 @@
                         <action selector="onGotoLinphoneLoginClick:" destination="-1" eventType="touchUpInside" id="4AG-ng-fIB"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="39" userLabel="loginButton" customClass="UIRoundBorderedButton">
-                    <rect key="frame" x="40" y="301" width="299" height="40"/>
-                    <accessibility key="accessibilityConfiguration" label="Use SIP account">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="K0C-dP-WWB"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="USE SIP ACCOUNT">
-                        <color key="titleColor" systemColor="labelColor"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" systemColor="systemGray2Color"/>
-                    </state>
-                    <state key="highlighted" backgroundImage="color_F.png">
-                        <color key="titleColor" red="0.67030966281890869" green="0.71867996454238892" blue="0.75078284740447998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="onGoToNonLinphoneInfoPage:" destination="-1" eventType="touchUpInside" id="bYh-d2-kHK"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Kbn-dL-C5h" userLabel="remoteProvisioningButton" customClass="UIRoundBorderedButton">
                     <rect key="frame" x="40" y="376" width="299" height="40"/>
                     <accessibility key="accessibilityConfiguration" label="Fetch remote configuration">
@@ -183,6 +161,28 @@
                     </state>
                     <connections>
                         <action selector="onGotoRemoteProvisioningClick:" destination="-1" eventType="touchUpInside" id="cAo-3u-yUT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="39" userLabel="loginButton" customClass="UIRoundBorderedButton">
+                    <rect key="frame" x="38" y="160" width="299" height="40"/>
+                    <accessibility key="accessibilityConfiguration" label="Use SIP account">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="K0C-dP-WWB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="SETUP PHONE ACCOUNT">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" systemColor="systemGray2Color"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="color_F.png">
+                        <color key="titleColor" red="0.67030966281890869" green="0.71867996454238892" blue="0.75078284740447998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onGoToNonLinphoneInfoPage:" destination="-1" eventType="touchUpInside" id="bYh-d2-kHK"/>
                     </connections>
                 </button>
             </subviews>
@@ -1058,7 +1058,7 @@ Once it is done, come back here and click on the button.</string>
             <rect key="frame" x="0.0" y="0.0" width="374" height="576"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USE YOUR SIP ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wen-Vj-Wgv" userLabel="titleLabel">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PHONE ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wen-Vj-Wgv" userLabel="titleLabel">
                     <rect key="frame" x="36" y="0.0" width="302" height="59"/>
                     <accessibility key="accessibilityConfiguration" label="Account setup assistant"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
@@ -1066,7 +1066,7 @@ Once it is done, come back here and click on the button.</string>
                     <nil key="highlightedColor"/>
                     <size key="shadowOffset" width="-1" height="-1"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter your username and password with your SIP domain." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LsE-IY-ocU" userLabel="subtitleLabel">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter your username and password." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LsE-IY-ocU" userLabel="subtitleLabel">
                     <rect key="frame" x="36" y="66" width="302" height="29"/>
                     <accessibility key="accessibilityConfiguration" label="Account setup assistant"/>
                     <constraints>
@@ -1110,7 +1110,7 @@ Once it is done, come back here and click on the button.</string>
                     <color key="textColor" red="0.98594832420349121" green="0.0" blue="0.026950567960739136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD (OPTIONAL)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-fy-KZS" userLabel="passwordLabel">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-fy-KZS" userLabel="passwordLabel">
                     <rect key="frame" x="38" y="202" width="298" height="14"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="E7u-c8-RAQ"/>
@@ -1152,7 +1152,7 @@ Once it is done, come back here and click on the button.</string>
                     <color key="textColor" red="0.42667588591575623" green="0.4266631007194519" blue="0.42667034268379211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-Wo-SMY" userLabel="domainField" customClass="UIAssistantTextField">
+                <textField opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-Wo-SMY" userLabel="domainField" customClass="UIAssistantTextField">
                     <rect key="frame" x="38" y="301" width="298" height="30"/>
                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     <accessibility key="accessibilityConfiguration" label="Domain"/>

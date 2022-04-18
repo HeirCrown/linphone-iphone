@@ -136,7 +136,7 @@ static UICompositeViewDescription *compositeDescription = nil;
     _qrCodeButton.hidden = !ENABLE_QRCODE;
 	[self resetLiblinphone:FALSE];
 	[self enableWelcomeViewButtons];
-	NSString *message = NSLocalizedString(@"I accept Heir Crown Inc' terms of use and privacy policy", nil);
+	NSString *message = NSLocalizedString(@"I accept Heir Crown Inc's terms of use and privacy policy", nil);
 	NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSForegroundColorAttributeName : [UIColor systemGrayColor]}];
 	[attributedString addAttribute:NSLinkAttributeName
 						 value:@"https://heircrown.com/hc-phone-terms"

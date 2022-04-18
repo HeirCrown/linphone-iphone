@@ -66,6 +66,10 @@
 											  }]];
 	BOOL mustLink = ([LinphoneManager.instance lpConfigIntForKey:@"must_link_account_time"] > 0);
 	BOOL hasAccount = linphone_core_get_account_list(LC) != NULL;
+    /* TAM disable Link My Account menu option*/
+    mustLink = FALSE;
+    hasAccount = FALSE;
+    
 	if (mustLink && hasAccount) {
 		[_sideMenuEntries
 			addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Link my account", nil)

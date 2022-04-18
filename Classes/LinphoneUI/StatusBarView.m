@@ -186,7 +186,7 @@
 	LinphoneGlobalState gstate = linphone_core_get_global_state(LC);
 	
 	if ([PhoneMainView.instance.currentView equal:AssistantView.compositeViewDescription] || [PhoneMainView.instance.currentView equal:CountryListView.compositeViewDescription]) {
-		message = NSLocalizedString(@"Configuring account", nil);
+		message = NSLocalizedString(@"Configuring phone", nil);
 	} else if (gstate == LinphoneGlobalOn && !linphone_core_is_network_reachable(LC)) {
 		message = NSLocalizedString(@"Network down", nil);
 	} else if (gstate == LinphoneGlobalConfiguring) {
@@ -196,7 +196,7 @@
 		if (linphone_core_get_account_list(LC) != NULL) {
 			message = NSLocalizedString(@"No default account", nil);
 		} else {
-			message = NSLocalizedString(@"No account configured", nil);
+			message = NSLocalizedString(@"Phone not configured", nil);
 		}
 
 	} else {

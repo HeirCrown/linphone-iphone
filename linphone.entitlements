@@ -24,7 +24,7 @@
 	<array>
 		<string>group.com.heircrown.softphone.linphoneExtension</string>
 		<string>group.com.heircrown.softphone.linphone.widget</string>
-		<string>group.group.com.heircrown.softphone.msgNotification</string>
+		<string>group.com.heircrown.softphone.msgNotification</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>

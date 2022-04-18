@@ -1245,7 +1245,10 @@ void popup_link_account_cb(LinphoneAccountCreator *creator, LinphoneAccountCreat
 	} else {
 		LinphoneAccount *account = linphone_core_get_default_account(LC);
 		LinphoneAccountParams const *accountParams = linphone_account_get_params(account);
-		if (account &&
+        /* TAM disable link your linphone.org account blah */
+        bool iEnabled = FALSE;
+        
+		if (iEnabled && account &&
 		    strcmp(linphone_account_params_get_domain(accountParams),
 			   [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 			    inSection:@"app"

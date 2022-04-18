@@ -283,9 +283,10 @@
 		if (section == ContactSections_Number) {
 			text = NSLocalizedString(@"Phone numbers", nil);
 			addEntryName = NSLocalizedString(@"Add new phone number", nil);
-		} else if (section == ContactSections_Sip) {
-			text = NSLocalizedString(@"SIP addresses", nil);
-			addEntryName = NSLocalizedString(@"Add new SIP address", nil);
+        // TAM disable add sip
+		//} else if (section == ContactSections_Sip) {
+		//	text = NSLocalizedString(@"SIP addresses", nil);
+		//	addEntryName = NSLocalizedString(@"Add new SIP address", nil);
 		} else if (section == ContactSections_Email &&
 				   [LinphoneManager.instance lpConfigBoolForKey:@"show_contacts_emails_preference"]) {
 			text = NSLocalizedString(@"Email addresses", nil);
