@@ -930,7 +930,7 @@ Once it is done, come back here and click on the button.</string>
                                 <constraint firstAttribute="width" constant="145" id="Nak-EE-lzi"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                            <color key="textColor" red="0.98766469955444336" green="0.27512490749359131" blue="0.029739789664745331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.77862626310000005" green="0.63180857899999998" blue="0.24497601390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="VEO-W5-GDl" appends="YES" id="0Qx-vd-QmI"/>
