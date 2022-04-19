@@ -71,6 +71,8 @@
 			   [FastAddressBook isSipURIValid:_addressLabel.text]));
         ContactDetailsView *contactDetailsView = VIEW(ContactDetailsView);
         self.inviteButton.hidden = !ENABLE_SMS_INVITE || [[contactDetailsView.contact sipAddresses] count] > 0 || !self.linphoneImage.hidden;
+        // Hide invite button
+        self.inviteButton.hidden = TRUE;
 		[self shouldHideEncryptedChatView:account && linphone_account_params_get_conference_factory_uri(linphone_account_get_params(account)) && model && linphone_presence_model_has_capability(model, LinphoneFriendCapabilityLimeX3dh)];
 	}
 
